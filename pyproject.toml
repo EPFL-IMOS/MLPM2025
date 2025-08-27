@@ -1,13 +1,71 @@
 [project]
 name = "mlpm2025"
 version = "0.1.0"
-description = "Add your description here"
+description = "Machine Learning for Predictive Maintenance 2025"
 readme = "README.md"
+license-files = ["LICENSE"]
+authors = [{name = "Amaury WEI"}]
 requires-python = ">=3.10"
 dependencies = [
+    "gpustat>=1.1.1",
+    "h5py>=3.14.0",
     "ipykernel>=6.30.1",
     "jupyter>=1.1.1",
-    "torch==2.4.0",
-    "torchaudio==2.4.0",
-    "torchvision==0.19.0",
+    "librosa>=0.11.0",
+    "matplotlib>=3.10.5",
+    "neptune>=1.14.0",
+    "pandas>=2.3.2",
+    "plotly>=6.3.0",
+    "pyreadr>=0.5.3",
+    "scikit-learn>=1.7.1",
+    "scipy>=1.15.3",
+    "seaborn>=0.13.2",
+    "tensorboard>=2.20.0",
+    "tensorboardx>=2.6.4",
+    "tensorflow>=2.20.0",
+    "tensorflow-datasets>=4.9.9",
+    "torch==2.4.1",
+    "torchaudio==2.4.1",
+    "torchinfo>=1.8.0",
+    "torchvision==0.19.1",
+    "tqdm>=4.67.1",
+    "yacs>=0.1.8",
 ]
+
+[project.urls]
+Homepage = "https://moodle.epfl.ch/course/view.php?id=17052"
+Repository = "https://github.com/EPFL-IMOS/MLPM2025"
+
+[tool.uv]
+environments = [
+    "sys_platform == 'darwin'",
+    "sys_platform == 'linux'",
+    "sys_platform == 'windows'",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "torch-cpu", marker = "platform_system == 'Darwin'"},
+  { index = "torch-gpu", marker = "platform_system == 'Linux'"},
+  { index = "torch-gpu", marker = "platform_system == 'Windows'"},
+]
+torchaudio = [
+  { index = "torch-cpu", marker = "platform_system == 'Darwin'"},
+  { index = "torch-gpu", marker = "platform_system == 'Linux'"},
+  { index = "torch-gpu", marker = "platform_system == 'Windows'"},
+]
+torchvision = [
+  { index = "torch-cpu", marker = "platform_system == 'Darwin'"},
+  { index = "torch-gpu", marker = "platform_system == 'Linux'"},
+  { index = "torch-gpu", marker = "platform_system == 'Windows'"},
+]
+
+[[tool.uv.index]]
+name = "torch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "torch-gpu"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
