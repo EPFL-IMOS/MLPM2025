@@ -1,4 +1,4 @@
-# CIVIL-426 | Machine Learning for Predictive Maintenance - 2025
+# CIVIL-426 | Machine Learning for Predictive Maintenance
 
 <p align="center">
     <img src="./media/EPFL_Logo_Digital_RGB_PROD.png" alt="EPFL logo" width="200"/>
@@ -20,7 +20,7 @@ that assignments and projects run smoothly and reproducibly across different sys
 
 ## Table of Contents
 
-- [CIVIL-426 | Machine Learning for Predictive Maintenance - 2025](#civil-426--machine-learning-for-predictive-maintenance---2025)
+- [CIVIL-426 | Machine Learning for Predictive Maintenance](#civil-426--machine-learning-for-predictive-maintenance)
   - [Table of Contents](#table-of-contents)
   - [Overview](#overview)
   - [Requirements](#requirements)
@@ -232,7 +232,7 @@ created virtual environment as kernel:
 
 <p align="center">
     <img src="./media/kernel_selection_part1.png" alt="Kernel selection" width="800"/>
-    <img src="./media/kerneL_selection_part2.png" alt="Kernel selection" width="800"/>
+    <img src="./media/kernel_selection_part2.png" alt="Kernel selection" width="800"/>
 </p>
 
 5. Run the entire Jupyter notebook by clicking on "Run All" at the top of the notebook.
