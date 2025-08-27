@@ -114,8 +114,8 @@ source .venv/bin/activate
 
 ### Windows Procedure
 
-> ✅️ **NOTE**️: The following installation procedure supports hardware acceleration on
-> Windows if you have an NVIDIA GPU. Use the `--extra=gpu` flag with `uv sync`.
+> ✅️ **NOTE**️: The following installation procedure supports hardware acceleration with
+> CUDA 12.4 on Windows if you have an NVIDIA GPU. No special steps are required.
 
 0. Open a **Powershell** terminal. ⚠️ **NOTE**: We will always assume that your terminal
 is a Powershell instance, not a Command Prompt.
@@ -160,8 +160,8 @@ be ran everytime you open a new terminal and want to use the `MLPM2025` Python e
 
 ### Linux Procedure
 
-> ✅️ **NOTE**️: The following installation procedure supports hardware acceleration on
-> Linux if you have an NVIDIA GPU. Use the `--extra=gpu` flag with `uv sync`.
+> ✅️ **NOTE**️: The following installation procedure supports hardware acceleration with
+> CUDA 12.4 on Linux if you have an NVIDIA GPU. No special steps are required.
 
 0. Open a terminal.
 
