@@ -117,10 +117,16 @@ source .venv/bin/activate
 > ✅️ **NOTE**️: The following installation procedure supports hardware acceleration with
 > CUDA 12.4 on Windows if you have an NVIDIA GPU. No special steps are required.
 
-0. Open a **Powershell** terminal. ⚠️ **NOTE**: We will always assume that your terminal
-is a Powershell instance, not a Command Prompt.
+0. Open a **64-bits Powershell** terminal. ⚠️ **NOTE**: We will always assume that your
+terminal is a Powershell instance, not a Command Prompt. 🚨 **WARNING**: Make sure you
+open a **64-bits** Powershell terminal, and **not** a 32-bits ~~Powershell (x86)~~ 
+terminal.
 
-2. Install [uv](https://github.com/astral-sh/uv) using the [official instructions](https://github.com/astral-sh/uv?tab=readme-ov-file#installation):
+<p align="center">
+    <img src="./media/powershell_start.jpeg" alt="Notebook output" width="600"/>
+</p>
+
+1. Install [uv](https://github.com/astral-sh/uv) using the [official instructions](https://github.com/astral-sh/uv?tab=readme-ov-file#installation):
 
 ```powershell
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
@@ -270,6 +276,17 @@ from a terminal.
 First, make sure you really need that additional dependency. Then, if you absolutely
 need to install it, use `uv add` to add a new package to the virtual environment. For
 example, `uv add torchinfo` to add the `torchinfo` package.
+
+6. **I'm on Windows and I have an error saying "Windows platform is not supported" when
+running the `uv sync` command. What can I do?**
+
+This means that you have install `uv` with a 32-bits instruction set from a "Powershell 
+(x86)" terminal. To fix the issue, uninstall the Python 3.10 version you just installed
+by running `uv python uninstall 3.10`. Then, uninstall `uv` by following the
+[official uninstallation instructions](https://docs.astral.sh/uv/getting-started/installation/#uninstallation).
+Then, close your terminal and open a proper 64-bits Powershell terminal (**not** x86). 
+Then, restart the complete installation procedure from the very beginning (including 
+re-installing `uv` properly).
 
 ## References
 
