@@ -16,6 +16,7 @@ dependencies = [
     "jupyter>=1.1.1",
     "librosa>=0.11.0",
     "matplotlib>=3.10.5",
+    "matplotlib-venn>=1.1.2",
     "neptune>=1.14.0",
     "pandas>=2.3.2",
     "plotly>=6.3.0",
