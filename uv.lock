@@ -1143,6 +1143,25 @@ wheels = [
 ]
 
 [[package]]
+name = "ipympl"
+version = "0.9.7"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "ipython", version = "8.37.0", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version < '3.11' and sys_platform == 'darwin') or (python_full_version < '3.11' and sys_platform == 'linux') or (python_full_version < '3.11' and sys_platform == 'windows')" },
+    { name = "ipython", version = "9.4.0", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.11' and sys_platform == 'darwin') or (python_full_version >= '3.11' and sys_platform == 'linux') or (python_full_version >= '3.11' and sys_platform == 'windows')" },
+    { name = "ipywidgets", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
+    { name = "matplotlib", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
+    { name = "numpy", version = "1.26.4", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version < '3.13' and sys_platform == 'darwin') or (python_full_version < '3.13' and sys_platform == 'linux') or (python_full_version < '3.13' and sys_platform == 'windows')" },
+    { name = "numpy", version = "2.3.2", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.13' and sys_platform == 'darwin') or (python_full_version >= '3.13' and sys_platform == 'linux') or (python_full_version >= '3.13' and sys_platform == 'windows')" },
+    { name = "pillow", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
+    { name = "traitlets", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/39/1b/acd3d481869d614a7acbb831bd9304411eae47b05d7607db989613028788/ipympl-0.9.7.tar.gz", hash = "sha256:3e505a56b6e9a7bfc4d40c1a861a0547adb16820eb67ec79131335dd0a5084f0", size = 58547447, upload-time = "2025-03-05T03:51:14.609Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/86/6b/21c62f1b2b5e18c6553f7364487dfdf7eb7952b1000a1b7863c1f97819e9/ipympl-0.9.7-py3-none-any.whl", hash = "sha256:3698ee7eaa0b047a7603517d7aa1b71b32118a5f51754cab45ec5d994f67208f", size = 515702, upload-time = "2025-03-05T03:50:48.616Z" },
+]
+
+[[package]]
 name = "ipython"
 version = "8.37.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1987,6 +2006,7 @@ dependencies = [
     { name = "gpustat", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
     { name = "h5py", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
     { name = "ipykernel", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
+    { name = "ipympl", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
     { name = "jupyter", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
     { name = "librosa", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
     { name = "matplotlib", marker = "sys_platform == 'darwin' or sys_platform == 'linux' or sys_platform == 'windows'" },
@@ -2016,6 +2036,7 @@ requires-dist = [
     { name = "gpustat", specifier = ">=1.1.1" },
     { name = "h5py", specifier = ">=3.14.0" },
     { name = "ipykernel", specifier = ">=6.30.1" },
+    { name = "ipympl", specifier = ">=0.9.7" },
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "librosa", specifier = ">=0.11.0" },
     { name = "matplotlib", specifier = ">=3.10.5" },
