@@ -249,6 +249,23 @@ supports hardware acceleration or not.
     <img src="./media/test_notebook_success.png" alt="Notebook output" width="800"/>
 </p>
 
+6. To make sure you can use this environment in different folders, you need to add it to
+the Visual Studio Code settings. Open the "Command Palette" by clicking on "View" ->
+"Command Palette". Then, search for "User Settings":
+
+<p align="center">
+    <img src="./media/command_palette.png" alt="Command palette" width="800"/>
+</p>
+
+7. Search for "venv" in the settings search bar, and add the location of your virtual 
+environment to the "Venv folders" list. ⚠️ **NOTE**: the folder will be different on
+your machine. Change to the right location for your specific machine.
+
+<p align="center">
+    <img src="./media/venv_folder.png" alt="Virtual environments list" width="800"/>
+</p>
+
+
 ## Q&A
 
 1. **Can I delete the `MLPM2025` repository after installation?**
