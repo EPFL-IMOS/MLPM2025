@@ -45,6 +45,7 @@ environments = [
     "sys_platform == 'darwin'",
     "sys_platform == 'linux'",
     "sys_platform == 'windows'",
+    "sys_platform == 'win32'",
 ]
 
 [tool.uv.sources]
@@ -52,16 +53,19 @@ torch = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
   { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
   { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
+  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 torchaudio = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
   { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
   { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
+  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 torchvision = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
   { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
   { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
+  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 
 [[tool.uv.index]]

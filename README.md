@@ -294,17 +294,6 @@ First, make sure you really need that additional dependency. Then, if you absolu
 need to install it, use `uv add` to add a new package to the virtual environment. For
 example, `uv add torchinfo` to add the `torchinfo` package.
 
-6. **I'm on Windows and I have an error saying "Windows platform is not supported" when
-running the `uv sync` command. What can I do?**
-
-This means that you have install `uv` with a 32-bits instruction set from a "Powershell 
-(x86)" terminal. To fix the issue, uninstall the Python 3.10 version you just installed
-by running `uv python uninstall 3.10`. Then, uninstall `uv` by following the
-[official uninstallation instructions](https://docs.astral.sh/uv/getting-started/installation/#uninstallation).
-Then, close your terminal and open a proper 64-bits Powershell terminal (**not** x86). 
-Then, restart the complete installation procedure from the very beginning (including 
-re-installing `uv` properly).
-
 ## References
 
 - [CIVIL-426 Course Book](https://edu.epfl.ch/coursebook/en/machine-learning-for-predictive-maintenance-applications-CIVIL-426)
