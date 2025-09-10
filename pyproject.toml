@@ -26,12 +26,12 @@ dependencies = [
     "seaborn>=0.13.2",
     "tensorboard>=2.20.0",
     "tensorboardx>=2.6.4",
-    "tensorflow>=2.20.0",
+    "tensorflow>=2.16.1",
     "tensorflow-datasets>=4.9.9",
-    "torch==2.4.1",
-    "torchaudio==2.4.1",
+    "torch==2.2.2",
+    "torchaudio==2.2.2",
     "torchinfo>=1.8.0",
-    "torchvision==0.19.1",
+    "torchvision==0.17.2",
     "tqdm>=4.67.1",
     "yacs>=0.1.8",
 ]
@@ -43,29 +43,17 @@ Repository = "https://github.com/EPFL-IMOS/MLPM2025"
 [tool.uv]
 environments = [
     "sys_platform == 'darwin'",
-    "sys_platform == 'linux'",
-    "sys_platform == 'windows'",
-    "sys_platform == 'win32'",
 ]
 
 [tool.uv.sources]
 torch = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 torchaudio = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 torchvision = [
   { index = "torch-cpu", marker = "sys_platform == 'Darwin'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Linux'"},
-  { index = "torch-gpu", marker = "sys_platform == 'Windows'"},
-  { index = "torch-gpu", marker = "sys_platform == 'win32'"},
 ]
 
 [[tool.uv.index]]
